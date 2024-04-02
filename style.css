@@ -42,7 +42,7 @@ html {
     width: 100%;
   }
   
-  .player__button {
+  .player__button, .full__screen {
     background: none;
     border: 0;
     line-height: 1;
@@ -72,7 +72,9 @@ html {
     transition: all .3s;
     flex-wrap: wrap;
     background: rgba(0,0,0,0.1);
+    
   }
+  
   
   .player:hover .player__controls {
     transform: translateY(0);
@@ -103,6 +105,7 @@ html {
     flex: 0;
     flex-basis: 50%;
   }
+  
   
   /* unholy css to style input type="range" */
   
