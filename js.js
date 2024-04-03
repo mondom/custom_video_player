@@ -48,11 +48,11 @@ function scrub(e) {
 }
 
 function toggleFullScreen() {
-    if (!document.fullscreenElement) {
-        video.requestFullscreen();
-    } else {
-        document.exitFullscreen();
-    }
+	if (!document.fullscreenElement) {
+		video.requestFullscreen()
+	} else if (document.exitFullscreen) {
+		video.exitFullscreen()
+	}
 }
 
 toggleBtn.addEventListener('click', togglePlay)
